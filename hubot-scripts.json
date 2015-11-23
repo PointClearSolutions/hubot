@@ -1,5 +1,6 @@
 [
   "base64.coffee",
   "roll.coffee",
-  "xkcd.coffee"
+  "xkcd.coffee",
+  "yelp.coffee"
 ]
