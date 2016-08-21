@@ -33,6 +33,18 @@ Then you can interact with Hubot by typing `Hubot help`.
     Hubot animate me <query> - The same thing as `image me`, except adds [snip]
     Hubot help - Displays all of the help commands that Hubot knows about.
     ...
+    
+### Running Hubot in Docker
+
+You can build the base image from the included Dockerfile  
+
+    docker build -t hubot .
+    
+Once you've build the image, make sure to populated the .env file with the correct values and run the following
+
+    docker run -d -p 8000:8000 --env-file .env --name hubot hubot
+    
+*Make sure the port specified with `docker run` matches the PORT value in the .env file and HUBOT_APAPTER has a valid value*
 
 ### Configuration
 
